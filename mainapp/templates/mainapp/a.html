@@ -1,0 +1,17 @@
+{% extends 'mainapp/main.html' %}
+
+{% block title %}main{% endblock %}
+
+{% load static %}
+
+{% block css %}<link rel="stylesheet" type="text/css" href="{% static 'mainapp/css/a.css' %}">{% endblock %}
+
+{% block content %}
+	<p>{{ item }}</p>
+	<br>
+	<br>
+	<br>
+	{% for i in items %}
+		<p>{{ i }}</p>
+	{% endfor%}
+{% endblock %}
